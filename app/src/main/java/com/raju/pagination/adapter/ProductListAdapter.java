@@ -1,4 +1,4 @@
-package com.raju.pagination;
+package com.raju.pagination.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -25,7 +25,7 @@ import java.util.List;
  * Created by raju on 19/10/16.
  */
 
-public class PaginationAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class ProductListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private static final int ITEM = 0;
     private static final int LOADING = 1;
@@ -35,7 +35,7 @@ public class PaginationAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
     private boolean isLoadingAdded = false;
 
-    public PaginationAdapter(Context context) {
+    public ProductListAdapter(Context context) {
         this.context = context;
         movieResults = new ArrayList<>();
     }

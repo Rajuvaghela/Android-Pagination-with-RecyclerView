@@ -12,7 +12,7 @@ public class MovieApi {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
                     .addConverterFactory(GsonConverterFactory.create())
-                    .baseUrl("https://api.themoviedb.org/3/")
+                    .baseUrl("https://www.awanmart.com.pk/?webservice=1&vootouchservice=")
                     .build();
         }
         return retrofit;
